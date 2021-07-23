@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Homework Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/656b1a4534.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+
+      <h1 id="city"> </h1>
+      <h2>Monday 14, 14:00</h2>
+      <h3>
+        Currently sunny and cloudy <br />
+        <span id="temperature"></span>
+      </h3>
+      <h4>H:21° L:16°</h4>
+
+      <form class="search-form" id="search-form">
+        <input id="city-input" type="text" 
+        placeholder="Enter City name"
+        autocomplete="off"
+        autofocus="on" />
+    
+    <input type="submit" value="Search"/>
+
+
+      <ul>
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span> km/h</li>
+        <li>Chance of rain: 60%</li>
+      </ul>
+
+      
+
+      <div class="row">
+        <div class="col-2">
+          <div class="card" style="width: 14rem;">
+            <i class="fas fa-cloud waether-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Monday</h5>
+              <p class="card-text">19°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 14rem;">
+            <i class="fas fa-cloud-sun-rain waether-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Tuesday</h5>
+              <p class="card-text">21°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 14rem;">
+            <i class="fas fa-cloud-sun waether-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Wednesday</h5>
+              <p class="card-text">23°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 14rem;">
+            <i class="fas fa-sun waether-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Thursday</h5>
+              <p class="card-text">25°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 14rem;">
+            <i class="fas fa-sun waether-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Friday</h5>
+              <p class="card-text">25°</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 14rem;">
+            <i class="fas fa-sun waether-icon"></i>
+            <div class="card-body">
+              <h5 class="card-title">Saturday</h5>
+              <p class="card-text">26°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">Coded by Estefany Ramirez</footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
